@@ -7,8 +7,12 @@ g_ascension_cards["Militia RU"] = {
 	card_type = "Hero";
 	rune_cost = 0;
    do_not_put_in_void = true;
-	effect = { "GainPower", 1 };
-	effect_text = "Gain 1P.";
+	effects = {
+      { "GainPower", 1 },
+      { "SetHonorPool", 320 },
+      { "BanishThisCard", 0 }
+   };
+	effect_text = "Gain 1P. Set Honor Pool to 320.";
    
    ai = {
       trivial = true,
